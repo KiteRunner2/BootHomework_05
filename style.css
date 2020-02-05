@@ -15,7 +15,7 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -71,7 +71,7 @@ textarea{
 }
 
 .timeblock {
-  width:60%;
+  width: 75%;
   padding: 10px;
   font-size: large;
 
@@ -82,8 +82,24 @@ textarea{
   box-shadow: 0 0 8px 8 dodgerblue;
 }
 
+.timeblock:hover {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 8 dodgerblue;
+}
+
 .hourblock {
+  width:12%;
+  padding: 10px;
+  font-size: large;
+}
+
+.padlock {
   width:10%;
   padding: 10px;
   font-size: large;
+}
+
+.subcontainer {
+  width: 100%;
+  margin: auto;
 }
