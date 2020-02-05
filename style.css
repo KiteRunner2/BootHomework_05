@@ -1,8 +1,7 @@
 body {
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
 }
 
 textarea{
@@ -16,7 +15,7 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  
+  background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -72,28 +71,9 @@ textarea{
 }
 
 .timeblock {
-  
+  width:60%;
   padding: 10px;
   font-size: large;
-  margin: 0em;
-  width:60%
-
-}
-.timeblock-l {
-  
-  padding: 10px;
-  font-size: large;
-  margin: 0em;
-  width:10%
-
-}
-
-.timeblock-r {
-  
-  padding: 10px;
-  font-size: large;
-  margin: 0em;
-  width:10%
 
 }
 
@@ -102,15 +82,8 @@ textarea{
   box-shadow: 0 0 8px 8 dodgerblue;
 }
 
-.timeblock:hover {
-  border-color: dodgerblue;
-  box-shadow: 0 0 8px 8 dodgerblue;
-}
-
-.subcontainer {
-  width: 80%;
-}
-
-.container {
-  text-align: center;
+.hourblock {
+  width:10%;
+  padding: 10px;
+  font-size: large;
 }
