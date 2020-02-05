@@ -20,12 +20,44 @@ function greyOut(hour){
     //console.log(c)
     c.forEach(value => {
         let d = value.children[1];
-        d.className = "timeblock-inactive";
-        console.log(d.value);
+        let tt = Number(d.id.slice(3));
+        console.log(tt,currentHour,tt<currentHour);
+        if (tt == Number(currentHour)) {
+            d.className = "timeblock-current";
+            d.placeholder = "What is your task?";
+        } 
+        else {
+        tt < Number(currentHour) ? d.className = "timeblock-inactive":d.className = "timeblock";
+        }
+        
+        
+        //console.log(d.value);
     })
     //a.childElementCount;
     //console.log(c)
 }
+
+function Init(){
+    let data = ['id','text'];
+    localStorage.setItem('calendar',JSON.stringify(data));
+}
+
+function Load(){
+
+
+}
+
+function Save(){
+
+
+}
+
+function Reset(){
+
+
+}
+
+
 $( '.btn' ).click(( event) => showText(event.target.id));
 $( '.timeblock' ).click( (event) => console.log(event.target.id));
 

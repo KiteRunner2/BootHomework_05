@@ -75,7 +75,7 @@ textarea{
   padding: 10px;
   font-size: small;
   border-width: 1px;
-  background-color: fuchsia;
+  background-color:wheat;
 }
 .timeblock-inactive {
   width:70%;
@@ -83,6 +83,14 @@ textarea{
   font-size: small;
   border-width: 1px;
   background-color:gray;
+}
+
+.timeblock-current {
+  width:70%;
+  padding: 10px;
+  font-size: small;
+  border-width: 1px;
+  background-color:red;
 }
 .timeblock:hover {
   border-color:dodgerblue;
