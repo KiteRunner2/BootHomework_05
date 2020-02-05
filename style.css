@@ -75,7 +75,14 @@ textarea{
   padding: 10px;
   font-size: small;
   border-width: 1px;
-
+  background-color: fuchsia;
+}
+.timeblock-inactive {
+  width:70%;
+  padding: 10px;
+  font-size: small;
+  border-width: 1px;
+  background-color:gray;
 }
 .timeblock:hover {
   border-color:dodgerblue;
@@ -94,9 +101,21 @@ textarea{
   background-color: white;
 }
 
-btn {
+.btn {
   border:none;
   background-color: white;
   text-align: center;
   font-size: small;
   }
+
+.btn:hover {
+  border-color:dodgerblue;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.btn:focus {
+  border-color:dodgerblue;
+  border-width: 1px;
+  border-style: solid;
+}
