@@ -23,22 +23,44 @@
   </head>
 
   <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+    <header class="jumbotron sticky-top">
+      <h3 class="display-4">Scheduler</h3>
+      <p class="lead">for</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+    <div class="container text-center">
       <!-- Timeblocks go here -->
-      <div><input type="text" class="hourblock" value="hello"><input type="text" class="timeblock"><input type="text" class="hourblock" disabled></div>
+      <div>
+        <input type="text" class="hourblock" value="0 AM" disabled>
+        <input type="text" placeholder="what is your task?" class="timeblock">
+        <button type="submit" class="hourblock btn">&#10004;</button>
+      </div>
+      <div>
+        <input type="text" class="hourblock" value="1 AM" disabled>
+        <input type="text" class="timeblock">
+        <button type="submit" class="hourblock btn">&#10004;</button>
+      </div>
+      <div>
+        <input type="text" class="hourblock" value="2 AM" disabled>
+        <input type="text" class="timeblock">
+        <button type="submit" class="hourblock btn">&#10004;</button>
+      </div>
+      <div>
+        <input type="text" class="hourblock" value="3 AM" disabled>
+        <input type="text" class="timeblock">
+        <button type="submit" class="hourblock btn">&#10004;</button>
+      </div>
+      <div>
+        <input type="text" class="hourblock" value="4 AM" disabled>
+        <input type="text" class="timeblock">
+        <button type="submit" class="hourblock btn">&#10004;</button>
+      </div>
       
-      <input type="text" class="timeblock">
-      <input type="text" class="timeblock">
-      <input type="text" class="timeblock">
 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
