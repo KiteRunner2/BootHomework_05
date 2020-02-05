@@ -1,7 +1,8 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 textarea{
@@ -71,9 +72,28 @@ textarea{
 }
 
 .timeblock {
-  width: 75%;
+  
   padding: 10px;
   font-size: large;
+  margin: 0em;
+  width:60%
+
+}
+.timeblock-l {
+  
+  padding: 10px;
+  font-size: large;
+  margin: 0em;
+  width:10%
+
+}
+
+.timeblock-r {
+  
+  padding: 10px;
+  font-size: large;
+  margin: 0em;
+  width:10%
 
 }
 
@@ -87,19 +107,10 @@ textarea{
   box-shadow: 0 0 8px 8 dodgerblue;
 }
 
-.hourblock {
-  width:12%;
-  padding: 10px;
-  font-size: large;
-}
-
-.padlock {
-  width:10%;
-  padding: 10px;
-  font-size: large;
-}
-
 .subcontainer {
-  width: 100%;
-  margin: auto;
+  width: 80%;
+}
+
+.container {
+  text-align: center;
 }
