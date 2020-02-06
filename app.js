@@ -1,10 +1,20 @@
-const dayofWeek = moment().format('dddd, MMMM Do');
-$( '#currentDay' ).text(dayofWeek);
+let init = (initF = () => {
 
-const currentTime = moment().format('HH:MM');
-const currentHour = moment().format('HH');
-$( '#currentTime').text(currentTime);
-console.log(currentHour);
+    const weekDay = moment().format('dddd, MMMM Do');
+    const timeCurrent = moment().format('HH:MM');
+    const hourCurrent = moment().format('HH');
+    $( '#currentTime').text(timeCurrent);
+    $( '#currentDay' ).text(weekDay);
+
+    return {
+        dayofWeek : weekDay,
+        currentTime : timeCurrent,
+        currentHour : hourCurrent
+    }
+
+
+})();
+
 
 function showText(id) {
     //debugger;
@@ -21,13 +31,13 @@ function greyOut(hour){
     c.forEach(value => {
         let d = value.children[1];
         let tt = Number(d.id.slice(3));
-        console.log(tt,currentHour,tt<currentHour);
-        if (tt == Number(currentHour)) {
+        console.log(tt,init.currentHour,tt<init.currentHour);
+        if (tt == Number(init.currentHour)) {
             d.className = "timeblock-current";
             d.placeholder = "What is your task?";
         } 
         else {
-        tt < Number(currentHour) ? d.className = "timeblock-inactive":d.className = "timeblock";
+        tt < Number(init.currentHour) ? d.disabled=true:d.className = "timeblock";
         }
         
         
@@ -37,7 +47,7 @@ function greyOut(hour){
     //console.log(c)
 }
 
-function Init(){
+function aInit(){
     let data = ['id','text'];
     localStorage.setItem('calendar',JSON.stringify(data));
 }

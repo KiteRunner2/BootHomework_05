@@ -75,14 +75,7 @@ textarea{
   padding: 10px;
   font-size: small;
   border-width: 1px;
-  background-color:wheat;
-}
-.timeblock-inactive {
-  width:70%;
-  padding: 10px;
-  font-size: small;
-  border-width: 1px;
-  background-color:gray;
+  background-color:#fcfcfc;
 }
 
 .timeblock-current {
@@ -90,7 +83,7 @@ textarea{
   padding: 10px;
   font-size: small;
   border-width: 1px;
-  background-color:red;
+  background-color:#D2F898;
 }
 .timeblock:hover {
   border-color:dodgerblue;
@@ -100,14 +93,7 @@ textarea{
   border-color:red;
 }
 
-.hourblock {
-  width:20%;
-  max-width: 60px;
-  padding: 10px;
-  font-size: small;
-  border-width: 1px;
-  background-color: white;
-}
+
 
 .btn {
   border:none;
@@ -126,4 +112,24 @@ textarea{
   border-color:dodgerblue;
   border-width: 1px;
   border-style: solid;
+}
+
+.timeblock:disabled {
+
+  width:70%;
+  padding: 10px;
+  font-size: small;
+  border-width: 1px;
+  background-color:#2F2f2f;
+  border-color:#2F2f2f;
+
+}
+
+.hourblock:disabled {
+  width:20%;
+  max-width: 60px;
+  padding: 10px;
+  font-size: small;
+  border-width: 1px;
+  background-color: white;
 }
